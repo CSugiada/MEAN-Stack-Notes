@@ -12,8 +12,8 @@ https://nodejs.org/en/
 sudo apt install nodejs -y
 
 # Check install
-node -v
-npm -v
+$ node -v
+$ npm -v
 ```
 
 # Express
@@ -23,16 +23,16 @@ npm -v
 https://cli.angular.io/
 ```bash
 # install cli
-npm install -g @angular/cli
+$ npm install -g @angular/cli
 ```
 ### Setup Project
 ```
 # create project
-ng new [app name]
-cd [app name]
+$ ng new [app name]
+$ cd [app name]
 
 # run developmental server
-ng serve
+$ ng serve
 
 # exit server with ctrl + c
 ```
@@ -48,7 +48,20 @@ dsf
 # Heroku
 ### Install
 https://devcenter.heroku.com/articles/heroku-cli
+
+### Setup App
+Create ```Procfile``` file in the lowest directory with contents:
+```
+web: npm start
+```
+
 ```bash
 # login to heroku
-heroku login
+$ heroku login
+
+# create a heroku app
+$ heroku create [app name]
+
+# push changes to heroku repository
+$ git push heroku master
 ```
