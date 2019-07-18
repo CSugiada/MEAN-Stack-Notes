@@ -14,7 +14,7 @@ const server = http.createServer((req, res) => {
     res.end('This is my first response');
 });
 
-server.listen(process.env.PORT || 3000);
+server.listen(3000);
 ```
 Update ```package.json```:
 ```json
